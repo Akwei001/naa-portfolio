@@ -22,6 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
+        {/*default theme not changing to dark*/}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -31,6 +32,11 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
+      <div className="flex justify-center">
+        <div className="max-w-[89vw]">
+          Dynamic web Magic with Next.js
+        </div>
+      </div>
     </html>
   );
 }
