@@ -35,7 +35,7 @@ export default function RootLayout({
       <div className="flex justify-center">
         <div className="max-w-[89vw]">
          
-          <h2> Dynamic web Magic with Next.js</h2>
+          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100"> Dynamic web Magic with Next.js</h2>
         </div>
       </div>
     </html>
