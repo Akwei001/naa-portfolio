@@ -1,5 +1,8 @@
 import React from 'react'
-import { Spotlight } from './Ui/Spotlight'
+import { Spotlight } from './ui/Spotlight'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa6'
 
 const Hero = () => {
   return (
@@ -27,8 +30,26 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-      
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-[89vw] md:max-W-2xl lg:max-W-[60vw] flex flex-col items-center justify-center">
+         
+          <h2 className="uppercase tracking-widest text-xs text-center text-blue-400"> Dynamic web Magic with Next.js</h2>
+          <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming Concepts into Seamless experiences"/>
+      <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Akwei, a Next.js Developer based in England.
+          </p>
+         <a href="#about">
+          <MagicButton
+            title="Show my work"
+            icon={<FaLocationArrow/>}
+            position="right"
+            />
+         </a>
+        </div>
+      </div>
+     
     </div>
+    
   )
 }
 
