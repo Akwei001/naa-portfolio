@@ -1,8 +1,15 @@
 import React from 'react'
+import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 
 const Grid = () => {
   return (
-    <div>Grid</div>
+    <section id='about'>
+      
+      <BentoGrid>
+       {[{title: 'Title1', description: 'Desc1'}].map((item, i) => (<BentoGridItem/>))}
+      </BentoGrid>
+      
+      </section>
   )
 }
 
